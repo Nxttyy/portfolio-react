@@ -5,6 +5,8 @@ import {Bungee_Outline}  from "next/font/google";
 const outlined_font = Bungee_Outline({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
+
 });
 
 function Content() {

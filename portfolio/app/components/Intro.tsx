@@ -8,16 +8,22 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const ultra = Ultra({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
+
 });
 
 const inter = Inter({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
+
 });
 
 const micro_5 = Jersey_10({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
+
 });
 
 function Intro() {

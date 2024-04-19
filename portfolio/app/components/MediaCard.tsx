@@ -12,6 +12,8 @@ import { Ultra, Inter, Jersey_10 } from "next/font/google";
 const inter = Inter({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
+
 });
 
 export default function MediaCard() {
