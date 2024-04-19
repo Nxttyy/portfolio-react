@@ -11,12 +11,12 @@ const outlined_font = Bungee_Outline({
 function Content() {
   return (
     <div className="flex w-full">
-      <div className="border w-full">
+      <div className=" w-full">
         <Projects />
         <Communities />
       </div>
       <div
-        className=" border w-fit  height-auto rotate-180"
+        className="  w-fit  height-auto rotate-180"
         style={{ writingMode: "vertical-rl" }}
       >
         <p

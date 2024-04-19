@@ -7,27 +7,30 @@ import flask from "../../public/flask.svg";
 
 function Techs() {
   return (
-    <div className="flex w-full justify-around gap-5 m-10">
+    <><p className="text-start mx-10 my-10 font-extrabold text-5xl">Technologies</p>
+    <div className="flex w-full justify-around gap-5 m-10 border p-5" style={{ borderColor: "#E84023" }}>
+      
       <div className=" rounded-sm border border-3 w-32 h-32 flex justify-center items-center" >
         <Image src={django} alt="django" className="w-20 h-20 fill-white m-5" />
       </div>
 
       <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
-        <Image src={fast_api} alt="django" className="w-20 h-20 fill-white" />
+        <Image src={fast_api} alt="Fast-api" className="w-20 h-20 fill-white" />
       </div>
 
       <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
-        <Image src={linux} alt="django" className="w-20 h-20 fill-white" />
+        <Image src={linux} alt="linux" className="w-20 h-20 fill-white" />
       </div>
 
       <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
-        <Image src={react} alt="django" className="w-20 h-20 fill-white" />
+        <Image src={react} alt="react" className="w-20 h-20 fill-white" />
       </div>
 
       <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
-        <Image src={flask} alt="django" className="w-20 h-20 fill-white" />
+        <Image src={flask} alt="flask" className="w-20 h-20 fill-white" />
       </div>
-    </div>
+    </div></>
+    
   );
 }
 

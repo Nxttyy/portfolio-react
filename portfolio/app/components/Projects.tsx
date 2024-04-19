@@ -8,9 +8,7 @@ function Projects() {
       <div className="flex flex-wrap m-5 text-center w-full gap-7">
         {/* Campus Sync */}
         <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img className="rounded-t-lg" src="" alt="" />
-          </a>
+          
           <div className="p-5">
             <a href="#">
               <p
@@ -25,7 +23,7 @@ function Projects() {
             </p>
             <a href="https://natty.pythonanywhere.com" ><div
               className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">site</p>
               <LanguageIcon />
@@ -37,9 +35,7 @@ function Projects() {
 
         {/* youtube flask */}
         <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img className="rounded-t-lg" src="" alt="" />
-          </a>
+          
           <div className="p-5">
             <a href="#">
               <p
@@ -56,7 +52,7 @@ function Projects() {
               </p>
             <a href="https://github.com/Nxttyy/YouTube-Flask" ><div
               className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">github</p>
               <GitHubIcon />
@@ -68,9 +64,7 @@ function Projects() {
 
         {/* libgen */}
         <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img className="rounded-t-lg" src="" alt="" />
-          </a>
+          
           <div className="p-5">
             <a href="#">
               <p
@@ -86,7 +80,7 @@ function Projects() {
             command-line interface (CLI) tool built with Python for downloading books from Library Genesis. It allows users to search for books by title, author, or ISBN and download them directly to their local system.              </p>
             <a href="https://github.com/Nxttyy/libgen-api-cli" ><div
               className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">github</p>
               <GitHubIcon />
@@ -98,9 +92,7 @@ function Projects() {
 
         {/* tele-mart */}
         <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img className="rounded-t-lg" src="" alt="" />
-          </a>
+          
           <div className="p-5">
             <a href="#">
               <p
@@ -116,7 +108,7 @@ function Projects() {
             A marketplace Telegram bot built using Python and the python-telegram-bot library. with functionaliies to create, list, and purchase items, and is integrated with the Chapa payment platform for handling payments.
             </p><a href="https://github.com/Nxttyy/Tele-Mart" ><div
               className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">github</p>
               <GitHubIcon />
@@ -127,9 +119,7 @@ function Projects() {
 
         {/* amharic-dictionary */}
         <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img className="rounded-t-lg" src="" alt="" />
-          </a>
+          
           <div className="p-5">
             <a href="#">
               <p
@@ -145,7 +135,7 @@ function Projects() {
             Opensource english to amharic dictionary.
             </p><a href="https://github.com/Nxttyy/Tele-Mart" ><div
               className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">github</p>
               <GitHubIcon />

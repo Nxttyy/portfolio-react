@@ -1,5 +1,6 @@
 // import MediaCard from "./MediaCard";
 import LanguageIcon from "@mui/icons-material/Language";
+import Image from "next/image";
 
 function Communities() {
   return (
@@ -12,7 +13,7 @@ function Communities() {
         {/* GDSC - AASTU */}
         <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
-            <img className="rounded-t-lg" src="/gdsc.png" alt="" />
+            <img className="rounded-t-lg" src="/gdsc.png" alt=""/>
           </a>
           <div className="p-5">
             <a href="#">
@@ -20,7 +21,6 @@ function Communities() {
                 className="mb-2 text-2xl font-bold  text-start text-pretty"
                 style={{ color: "#E84023" }}
               >
-                
                 GDSC - AASTU
               </p>
             </a>
@@ -28,13 +28,14 @@ function Communities() {
             <p className="mb-3 font-normal text-gray-100 text-start ">
             Google developer students club at Addis ababa science and technology university.
             </p>
-            <a href="https://www.linkedin.com/company/gdsc-aastu/" ><div
-              className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+            <a href="https://www.linkedin.com/company/gdsc-aastu/" >
+            <div className="flex border w-fit py-1 px-2 rounded-md"
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">learn more</p>
               <LanguageIcon />
-            </div></a>
+              </div>
+            </a>
 
           </div>
         </div>
@@ -61,7 +62,7 @@ function Communities() {
             </p>
             <a href="https://www.evangadi.com/" ><div
               className="flex border w-fit py-1 px-2 rounded-md"
-              style={{ "border-color": "#E84023" }}
+              style={{ borderColor: "#E84023" }}
             >
               <p className="pr-2">learn more</p>
               <LanguageIcon />

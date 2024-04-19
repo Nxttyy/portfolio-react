@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en" className="">
       <body>
         {children}
-        <script src=" ../node_modules/flowbite/dist/flowbite.min.js"></script>
+        <script src=" ../node_modules/flowbite/dist/flowbite.min.js" async />
       </body>
     </html>
   );

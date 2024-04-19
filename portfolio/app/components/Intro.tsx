@@ -25,8 +25,8 @@ const micro_5 = Jersey_10({
 
 function Intro() {
   return (
-    <div className="flex  justify-between border border-green-700">
-      <div className="border border-blue-50 w-full">
+    <div className="flex  justify-between border mt-10">
+      <div className=" w-full">
         <h1 className={`${micro_5.className} text-9xl p-10 m-5`}>
           Natty <br /> Yirga
         </h1>
@@ -34,10 +34,10 @@ function Intro() {
         <ul className="flex flex-col mx-10 my-10">
           <li className="flex my-3">
             <MailOutlineIcon className="mx-5" />
-            <p className={`${inter.className} text-midium font-light`}>
+            <p className={`${inter.className} text-midium font-extrabold `}>
               Nathnaelyirga
             </p>
-            <p className={`${inter.className} text-large font-bold italic`}>
+            <p className={`${inter.className} text-large font-light text-opacity-0`}>
               @gmail.com
             </p>
           </li>
@@ -63,7 +63,7 @@ function Intro() {
         </ul>
       </div>
 
-      <div className="border border-red-600 w-full flex items-center justify-center place-items-center place-content-center">
+      <div className=" w-full flex items-center justify-center place-items-center place-content-center">
         <iframe
           src="/ascii-art.html"
           scrolling="no"
