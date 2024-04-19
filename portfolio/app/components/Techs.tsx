@@ -8,23 +8,23 @@ import flask from "../../public/flask.svg";
 function Techs() {
   return (
     <div className="flex w-full justify-around gap-5 m-10">
-      <div className=" rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{'border-color':'#E84023'}}>
+      <div className=" rounded-sm border border-3 w-32 h-32 flex justify-center items-center" >
         <Image src={django} alt="django" className="w-20 h-20 fill-white m-5" />
       </div>
 
-      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{'border-color':'#E84023'}}>
+      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
         <Image src={fast_api} alt="django" className="w-20 h-20 fill-white" />
       </div>
 
-      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{'border-color':'#E84023'}}>
+      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
         <Image src={linux} alt="django" className="w-20 h-20 fill-white" />
       </div>
 
-      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{'border-color':'#E84023'}}>
+      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
         <Image src={react} alt="django" className="w-20 h-20 fill-white" />
       </div>
 
-      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{'border-color':'#E84023'}}>
+      <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
         <Image src={flask} alt="django" className="w-20 h-20 fill-white" />
       </div>
     </div>

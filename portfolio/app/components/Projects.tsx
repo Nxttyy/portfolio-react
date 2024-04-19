@@ -6,10 +6,10 @@ function Projects() {
         <p className="text-start mx-10 my-10 font-extrabold text-5xl">Projects</p>
     <div className="flex flex-wrap m-5 text-center w-full">
         
+      {/* <MediaCard />
       <MediaCard />
       <MediaCard />
-      <MediaCard />
-      <MediaCard />
+      <MediaCard /> */}
     </div>
     </div>
     

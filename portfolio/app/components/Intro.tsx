@@ -1,16 +1,15 @@
-import Image from "next/image";
 import { Ultra, Inter, Jersey_10 } from "next/font/google";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const ultra = Ultra({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
+// const ultra = Ultra({
+//   weight: "400",
+//   subsets: ["latin"],
+//   display: "swap",
 
-});
+// });
 
 const inter = Inter({
   weight: "400",

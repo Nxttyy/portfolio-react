@@ -7,8 +7,8 @@ function Communities() {
         Communities
       </p>
       <div className="flex flex-wrap m-5 text-center w-full">
-        <MediaCard />
-        <MediaCard />
+        {/* <MediaCard />
+        <MediaCard /> */}
       </div>
     </div>
   );

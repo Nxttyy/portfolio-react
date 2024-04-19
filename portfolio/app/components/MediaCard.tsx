@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Ultra, Inter, Jersey_10 } from "next/font/google";
+import { Inter } from "next/font/google";
 
 
 const inter = Inter({
@@ -16,7 +16,7 @@ const inter = Inter({
 
 });
 
-export default function MediaCard() {
+function MediaCard () {
   return (
     <Card sx={{ maxWidth: 445 }} className='m-5 bg-gray-950' >
       <CardMedia
@@ -40,3 +40,5 @@ export default function MediaCard() {
     </Card>
   );
 }
+
+export default MediaCard;
