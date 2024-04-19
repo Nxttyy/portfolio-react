@@ -13,7 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body >{children}</body>
+      <body>
+        {children}
+        <script src=" ../node_modules/flowbite/dist/flowbite.min.js"></script>
+      </body>
     </html>
   );
 }

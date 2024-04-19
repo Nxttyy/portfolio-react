@@ -15,14 +15,12 @@ const inter = Inter({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
-
 });
 
 const micro_5 = Jersey_10({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
-
 });
 
 function Intro() {
@@ -65,13 +63,12 @@ function Intro() {
         </ul>
       </div>
 
-      <div className="border border-red-600 w-full flex items-center justify-center">
+      <div className="border border-red-600 w-full flex items-center justify-center place-items-center place-content-center">
         <iframe
           src="/ascii-art.html"
-          width="100%"
-          height="100%"
-          scrolling="no" 
-          // className="width-full height-full"
+          scrolling="no"
+          frameBorder="0"
+          className="w-full h-full place-self-center  m-10 py-10"
         ></iframe>
       </div>
     </div>
@@ -79,3 +76,5 @@ function Intro() {
 }
 
 export default Intro;
+
+// portfolio/public/ascii-art .html

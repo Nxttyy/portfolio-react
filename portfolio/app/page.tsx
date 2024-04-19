@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import Content from "./components/Content";
 import Techs from "./components/Techs";
 
+
 function Home() {
   return (
     <main>
@@ -10,11 +11,11 @@ function Home() {
         <Intro />
         <Content />
         <Techs />
+
+        
       </div>
     </main>
   );
 }
-
-
 
 export default Home;
