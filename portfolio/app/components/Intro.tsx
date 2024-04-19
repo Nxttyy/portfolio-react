@@ -3,7 +3,7 @@ import { Ultra, Inter, Jersey_10 } from "next/font/google";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ultra = Ultra({
   weight: "400",
@@ -60,13 +60,13 @@ function Intro() {
         </ul>
       </div>
 
-      <div className="border border-red-600 w-full">
-        <Image
-          src="/banana.jpeg"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-        />
+      <div className="border border-red-600 w-full flex items-center justify-center">
+        <iframe
+          src="/ascii-art.html"
+          width="100%"
+          height="100%"
+          // className="width-full height-full"
+        ></iframe>
       </div>
     </div>
   );
