@@ -70,6 +70,7 @@ function Intro() {
           src="/ascii-art.html"
           width="100%"
           height="100%"
+          scrolling="no" 
           // className="width-full height-full"
         ></iframe>
       </div>
