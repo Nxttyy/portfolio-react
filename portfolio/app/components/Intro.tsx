@@ -29,13 +29,13 @@ function Intro() {
   return (
     <div className="flex  justify-between border mt-10">
       <div className=" w-full">
-        <h1 className={`${micro_5.className} text-9xl p-10 m-5`}>
+        <h1 className={`${micro_5.className} text-9xl p-10 m-5 text-white`}>
           Natty <br /> Yirga
         </h1>
 
         <ul className="flex flex-row my-7 justify-center w-full">
           <li className="">
-            <a href="mailto:Nathnaelyirga@gmail.com"><MailOutlineIcon className="mx-5" /></a>
+            <a href="mailto:Nathnaelyirga@gmail.com" ><MailOutlineIcon className="mx-5 fill-slate-400" /></a>
             {/* <p className={`${inter.className} text-midium font-extrabold `}>
               Nathnaelyirga
             </p>
@@ -44,26 +44,26 @@ function Intro() {
             </p> */}
           </li>
           <li className=" ">
-            <a href="https://www.linkedin.com/in/nathnael-yirga/" ><LinkedInIcon className="mx-5" /></a>
+            <a href="https://www.linkedin.com/in/nathnael-yirga/"  target="_blank"><LinkedInIcon className="mx-5 fill-slate-400" /></a>
             {/* <p className={`${inter.className} text-midium font-light`}>@</p>
             <p className={`${inter.className} text-midium font-bold`}> */}
               {/* Nathnaelyirga */}
             {/* </p> */}
           </li>
           <li className="">
-            <a href="https://www.telegram.me/Nxtiey/"><TelegramIcon className="mx-5" /></a>
+            <a href="https://www.telegram.me/Nxtiey/" target="_blank"><TelegramIcon className="mx-5 fill-slate-400" /></a>
             {/* <p className={`${inter.className} text-midium font-light`}>t.me/</p>
             <p className={`${inter.className} text-midium font-bold`}>Nxttie</p> */}
           </li>
           <li className="">
-            <a href="https://www.github.com/Nxttyy/"><GitHubIcon className="mx-5" /></a>
+            <a href="https://www.github.com/Nxttyy/" target="_blank"><GitHubIcon className="mx-5 fill-slate-400" /></a>
             {/* <p className={`${inter.className} text-midium font-light`}>@</p>
             <p className={`${inter.className} text-midium font-bold`}> */}
               {/* Nathnaelyirga */}
             {/* </p> */}
           </li>
           <li className="">
-            <a href="https://www.twitter.com/NathnaelYirga/"><XIcon className="mx-5" /></a>
+            <a href="https://www.twitter.com/NathnaelYirga/" target="_blank"><XIcon className="mx-5 fill-slate-400" /></a>
             {/* <p className={`${inter.className} text-midium font-light`}>@</p>
             <p className={`${inter.className} text-midium font-bold`}> */}
               {/* Nathnaelyirga */}

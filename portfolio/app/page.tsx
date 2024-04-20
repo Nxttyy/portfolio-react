@@ -11,8 +11,6 @@ function Home() {
         <Intro />
         <Content />
         <Techs />
-
-        
       </div>
     </main>
   );
