@@ -25,8 +25,8 @@ function Projects() {
               className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">site</p>
-              <LanguageIcon />
+              <p className="pr-2 text-white">site</p>
+              <LanguageIcon className="text-white"/>
             </div></a>
 
             
@@ -54,8 +54,8 @@ function Projects() {
               className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">github</p>
-              <GitHubIcon />
+              <p className="pr-2 text-white">github</p>
+              <GitHubIcon className="text-white"/>
             </div></a>
 
           </div>
@@ -82,8 +82,8 @@ function Projects() {
               className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">github</p>
-              <GitHubIcon />
+              <p className="pr-2 text-white">github</p>
+              <GitHubIcon className="text-white"/>
             </div></a>
 
           </div>
@@ -110,8 +110,8 @@ function Projects() {
               className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">github</p>
-              <GitHubIcon />
+              <p className="pr-2 text-white">github</p>
+              <GitHubIcon className="text-white"/>
             </div></a>
 
           </div>
@@ -137,8 +137,8 @@ function Projects() {
               className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">github</p>
-              <GitHubIcon />
+              <p className="pr-2 text-white">github</p>
+              <GitHubIcon className="text-white"/>
             </div></a>
 
           </div>

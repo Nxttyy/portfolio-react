@@ -32,8 +32,8 @@ function Communities() {
             <div className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">learn more</p>
-              <LanguageIcon />
+              <p className="pr-2 text-white">learn more</p>
+              <LanguageIcon className="text-white"/>
               </div>
             </a>
 
@@ -64,8 +64,8 @@ function Communities() {
               className="flex border w-fit py-1 px-2 rounded-md"
               style={{ borderColor: "#E84023" }}
             >
-              <p className="pr-2">learn more</p>
-              <LanguageIcon />
+              <p className="pr-2 text-white">learn more</p>
+              <LanguageIcon className="text-white"/>
             </div></a>
 
           </div>

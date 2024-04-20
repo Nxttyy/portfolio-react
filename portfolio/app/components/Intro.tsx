@@ -44,7 +44,7 @@ function Intro() {
             </p> */}
           </li>
           <li className=" ">
-            <a href="https://www.linkedin.com/in/nathnael-yirga-7aaab8264/" ><LinkedInIcon className="mx-5" /></a>
+            <a href="https://www.linkedin.com/in/nathnael-yirga/" ><LinkedInIcon className="mx-5" /></a>
             {/* <p className={`${inter.className} text-midium font-light`}>@</p>
             <p className={`${inter.className} text-midium font-bold`}> */}
               {/* Nathnaelyirga */}
