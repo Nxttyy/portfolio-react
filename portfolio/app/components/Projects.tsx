@@ -7,11 +7,11 @@ function Projects() {
       <p className="text-start mx-10 my-10 font-extrabold text-5xl text-white">
         Projects
       </p>
-      <div className="flex flex-wrap m-5 text-center w-full gap-7">
+      <div className="flex flex-wrap m-5  text-center w-full gap-7">
         
         {/* Campus Sync */}
-        <div className="max-w-sm bg-gray-900 border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-          <div className="p-5 flex flex-col border border-blue-900 h-full  rounded-sm">
+        <div className="max-w-sm bg-gray-900 border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700  ">
+          <div className="p-5 flex flex-col border border-blue-900 h-full  rounded-sm ">
             <a href="#">
               <p
                 className="mb-2 text-2xl font-bold  text-start text-pretty"

@@ -16,7 +16,7 @@ function Content() {
         <Communities />
       </div>
       <div
-        className="  w-fit  height-auto rotate-180"
+        className="  w-fit hidden lg:inline  height-100 rotate-180"
         style={{ writingMode: "vertical-rl" }}
       >
         <p

@@ -7,7 +7,7 @@ import flask from "../../public/flask.svg";
 
 function Techs() {
   return (
-    <><p className="text-start mx-10 my-10 font-extrabold text-5xl text-white">Technologies</p>
+    <div className=""><p className="text-start mx-10 my-10 font-extrabold text-5xl text-white">Technologies</p>
     <div className="flex w-full justify-around gap-5 m-10 border-2 p-5" style={{ borderColor: "#E84023" }}>
       
       <div className=" rounded-sm border border-3 w-32 h-32 flex justify-center items-center" >
@@ -29,7 +29,7 @@ function Techs() {
       <div className="rounded-sm border border-3 w-32 h-32 flex justify-center items-center" style={{}}>
         <Image src={flask} alt="flask" className="w-20 h-20 fill-white" />
       </div>
-    </div></>
+    </div></div>
     
   );
 }

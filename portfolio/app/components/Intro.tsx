@@ -36,19 +36,11 @@ function Intro() {
         <ul className="flex flex-row my-7 justify-center w-full">
           <li className="">
             <a href="mailto:Nathnaelyirga@gmail.com" ><MailOutlineIcon className="mx-5 fill-slate-400" /></a>
-            {/* <p className={`${inter.className} text-midium font-extrabold `}>
-              Nathnaelyirga
-            </p>
-            <p className={`${inter.className} text-large font-light text-opacity-0`}>
-              @gmail.com
-            </p> */}
+           
           </li>
           <li className=" ">
             <a href="https://www.linkedin.com/in/nathnael-yirga/"  target="_blank"><LinkedInIcon className="mx-5 fill-slate-400" /></a>
-            {/* <p className={`${inter.className} text-midium font-light`}>@</p>
-            <p className={`${inter.className} text-midium font-bold`}> */}
-              {/* Nathnaelyirga */}
-            {/* </p> */}
+           
           </li>
           <li className="">
             <a href="https://www.telegram.me/Nxtiey/" target="_blank"><TelegramIcon className="mx-5 fill-slate-400" /></a>
@@ -57,22 +49,16 @@ function Intro() {
           </li>
           <li className="">
             <a href="https://www.github.com/Nxttyy/" target="_blank"><GitHubIcon className="mx-5 fill-slate-400" /></a>
-            {/* <p className={`${inter.className} text-midium font-light`}>@</p>
-            <p className={`${inter.className} text-midium font-bold`}> */}
-              {/* Nathnaelyirga */}
-            {/* </p> */}
+           
           </li>
           <li className="">
             <a href="https://www.twitter.com/NathnaelYirga/" target="_blank"><XIcon className="mx-5 fill-slate-400" /></a>
-            {/* <p className={`${inter.className} text-midium font-light`}>@</p>
-            <p className={`${inter.className} text-midium font-bold`}> */}
-              {/* Nathnaelyirga */}
-            {/* </p> */}
+  
           </li>
         </ul>
       </div>
 
-      <div className=" w-full flex items-center justify-center place-items-center place-content-center">
+      <div className=" w-full hidden lg:flex items-center justify-center place-items-center place-content-center ">
         <iframe
           src="/ascii-art.html"
           scrolling="no"
