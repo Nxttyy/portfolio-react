@@ -127,7 +127,8 @@ function Projects() {
           </div>
         </div>
 
-        {/* amharic-dictionary */}
+
+
         <div className="max-w-sm bg-gray-900 border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
           <div className="p-5 flex flex-col border border-blue-900 h-full  rounded-sm">
             <a href="#">
@@ -140,9 +141,8 @@ function Projects() {
             </a>
 
             <p className="mb-3 font-normal text-gray-100 text-start ">
-              Opensource english to amharic dictionary.
-            </p>
-            <a href="https://github.com/Nxttyy/Tele-Mart" className="mt-auto">
+An open-source English to Amharic dictionary allows collaborative translation and updates between the two languages.            </p>
+            <a href="https://github.com/Nxttyy/AmharicDictionary" className="mt-auto">
               <div
                 className="flex border w-fit py-1 px-2 rounded-md"
                 style={{ borderColor: "#E84023" }}
@@ -153,6 +153,9 @@ function Projects() {
             </a>
           </div>
         </div>
+
+        {/* amharic-dictionary */}
+      
       </div>
     </div>
   );
