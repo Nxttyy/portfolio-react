@@ -128,6 +128,7 @@ function Projects() {
         </div>
 
 
+        {/* amharic-dictionary */}
 
         <div className="max-w-sm bg-gray-900 border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
           <div className="p-5 flex flex-col border border-blue-900 h-full  rounded-sm">
@@ -154,7 +155,6 @@ An open-source English to Amharic dictionary allows collaborative translation an
           </div>
         </div>
 
-        {/* amharic-dictionary */}
       
       </div>
     </div>

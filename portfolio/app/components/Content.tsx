@@ -1,3 +1,5 @@
+'use client';
+import { useEffect, useState } from "react";
 import Projects from "./Projects";
 import Communities from "./Communities";
 import { Bungee_Outline } from "next/font/google";
@@ -8,22 +10,34 @@ const outlined_font = Bungee_Outline({
   display: "swap",
 });
 
+const sideTexts = ["BACKEND DEV", "FRONTEND DEV", "FULLSTACK DEV"];
+
 function Content() {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % sideTexts.length);
+    }, 10000); // Change text every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex w-full">
-      <div className=" w-full">
+      <div className="w-full">
         <Projects />
         <Communities />
       </div>
       <div
-        className="  w-fit hidden lg:inline  height-100 rotate-180"
+        className="w-fit hidden lg:inline height-100 rotate-180"
         style={{ writingMode: "vertical-rl" }}
       >
         <p
-          className={`${outlined_font.className} text-9xl p-10 m-5 text-9xl  text-nowrap truncate" `}
+          className={`${outlined_font.className} text-9xl p-10 m-5 text-nowrap truncate animate-text`}
           style={{ color: "#E84023" }}
         >
-          <text>BACKEND DEV</text>
+          {sideTexts[currentTextIndex]}
         </p>
       </div>
     </div>
