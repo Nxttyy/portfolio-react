@@ -16,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body className="bg-gradient-to-r from-slate-900 to-slate-700">
+      <body className="bg-gradient-to-r from-red-900 to-slate-700">
+
         {children}
         <script src=" ../node_modules/flowbite/dist/flowbite.min.js" async />
       </body>
