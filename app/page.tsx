@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import Content from "./components/Content";
 import Techs from "./components/Techs";
 import React from "react";

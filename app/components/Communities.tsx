@@ -1,5 +1,15 @@
 import Image from "next/image";
 import LanguageIcon from "@mui/icons-material/Language";
+import { Inter} from "next/font/google";
+
+
+const inter = Inter({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+
 
 function Communities() {
   return (
@@ -37,7 +47,7 @@ function Communities() {
               <div className="flex border w-fit py-1 px-2 rounded-md"
                 style={{ borderColor: "#E84023" }}
               >
-                <p className="pr-2 text-white">learn more</p>
+                <p className={`${inter.className} pr-2 text-white`}>learn more</p>
                 <LanguageIcon className="text-white"/>
               </div>
             </a>
@@ -46,8 +56,8 @@ function Communities() {
         </div>
 
         {/* Evangadi */}
-        <div className="max-w-sm bg-black border border-gray-200 rounded-lg shadow ">
-          <a href="#">
+        <div className="max-w-sm bg-black border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+          <a href="https://www.evangadi.com/">
             <Image 
               src="/evangadi1.jpeg" 
               alt="Evangadi Networks"
@@ -56,8 +66,8 @@ function Communities() {
               className="rounded-t-lg object-fill"
             />
           </a>
-          <div className="p-5 flex flex-col border h-80">
-            <a href="#">
+          <div className="p-5 flex flex-col h-80">
+            <a href="https://www.evangadi.com/">
               <p
                 className="mb-2 text-2xl font-bold  text-start text-pretty"
                 style={{ color: "#E84023" }}
@@ -73,7 +83,7 @@ function Communities() {
               <div className="flex border w-fit py-1 px-2 rounded-md"
                 style={{ borderColor: "#E84023" }}
               >
-                <p className="pr-2 text-white">learn more</p>
+                <p className={`${inter.className} pr-2 text-white`}>learn more</p>
                 <LanguageIcon className="text-white"/>
               </div>
             </a>
