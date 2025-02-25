@@ -1,0 +1,33 @@
+[
+    {
+      "name": "email",
+      "icon": "MailOutlineIcon",
+      "link": "mailto:Nathnaelyirga@gmail.com"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "LinkedInIcon",
+      "link": "https://www.linkedin.com/in/nathnael-yirga/"
+    },
+    {
+      "name": "Telegram",
+      "icon": "TelegramIcon",
+      "link": "https://www.telegram.me/Nxtiey/"
+    },
+    {
+      "name": "GitHub",
+      "icon": "GitHubIcon",
+      "link": "https://www.github.com/Nxttyy/"
+    },
+    {
+      "name": "Twitter",
+      "icon": "XIcon",
+      "link": "https://www.twitter.com/NathnaelYirga/"
+    },
+    {
+      "name": "Description",
+      "icon": "DescriptionIcon",
+      "link": "https://www.twitter.com/NathnaelYirga/"
+    }
+  ]
+  
