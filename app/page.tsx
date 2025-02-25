@@ -2,11 +2,8 @@ import dynamic from 'next/dynamic';
 import Content from "./components/Content";
 import Techs from "./components/Techs";
 import React from "react";
+import Intro from "./components/Intro"
 
-// Dynamically import the Intro component
-const Intro = dynamic(() => import('./components/Intro'), {
-  loading: () => <p>Loading...</p>, // Optional: Show a loading indicator while the component is being loaded
-});
 
 function Home() {
   return (

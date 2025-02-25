@@ -7,7 +7,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PictureAsPdf from '@mui/icons-material/PictureAsPdf';
 import { useEffect, useState } from "react";
-import bg from '../../public/bg-grad-cropped.png'
+// import bg from '../../public/bg-grad-cropped.png'
+
+
+const backgroundImage = `url("/bg-grad-cropped.png")`; 
+
 
 const micro_5 = Jersey_10({
   weight: "400",
@@ -27,10 +31,11 @@ function Intro() {
       .catch((err) => console.error("Error loading ASCII art:", err));
   }, []);
 
+  
 
 
   return (
-    <div className="flex  justify-between border mt-10 bg-cover bg-center" style={{ backgroundImage: `url(${bg.src}`}}>
+    <div className="flex  justify-between border mt-10 bg-cover bg-center" style={{ backgroundImage }}>
       <div className=" w-full">
         <h1 className={`${micro_5.className} text-9xl p-10 m-5 text-white`}>
           Natty <br /> Yirga
