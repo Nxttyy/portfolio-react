@@ -22,7 +22,7 @@ const projectsData = [
       description:
         "CLI tool built with Python for downloading books from Library Genesis. It allows users to search for books by title, author, or ISBN and download them directly.",
       link: "https://github.com/Nxttyy/libgen-api-cli",
-      linkText: "github",
+      linkText: "GitHub",
       color: "#E84023",
       iconType: "github",
     },
@@ -31,7 +31,7 @@ const projectsData = [
       description:
         "A marketplace Telegram bot built using Python and the python-telegram-bot library. Features include creating, listing, and purchasing items, with Chapa payment integration.",
       link: "https://github.com/Nxttyy/Tele-Mart",
-      linkText: "github",
+      linkText: "GitHub",
       color: "#E84023",
       iconType: "github",
     },
@@ -40,7 +40,7 @@ const projectsData = [
       description:
         "An open-source English to Amharic dictionary that allows collaborative translation and updates between the two languages.",
       link: "https://github.com/Nxttyy/AmharicDictionary",
-      linkText: "github",
+      linkText: "GitHub",
       color: "#E84023",
       iconType: "github",
     },
