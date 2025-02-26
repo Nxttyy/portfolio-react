@@ -2,6 +2,7 @@ import Image from "next/image";
 import LanguageIcon from "@mui/icons-material/Language";
 import { Inter} from "next/font/google";
 
+const color = "#E84023"
 
 const inter = Inter({
   weight: "400",
@@ -43,14 +44,18 @@ function Communities() {
             <p className="mb-3 font-normal text-gray-100 text-start ">
               Google Developer Students Club at Addis Ababa Science and Technology University.
             </p>
-            <a href="https://www.linkedin.com/company/gdsc-aastu/" className="mt-auto">
-              <div className="flex border w-fit py-1 px-2 rounded-md"
-                style={{ borderColor: "#E84023" }}
-              >
-                <p className={`${inter.className} pr-2 text-white`}>learn more</p>
-                <LanguageIcon className="text-white"/>
-              </div>
-            </a>
+        <a href="https://www.linkedin.com/company/gdsc-aastu/" target="_blank" rel="noopener noreferrer" className="mt-auto">
+          <div className="relative transition-all duration-200 ease-in-out transform hover:-translate-y-1">
+            <div
+              className="flex border w-fit py-1 px-2 rounded-sm bg-transparent border-2 shadow-[4px_4px_0px_#E84023] hover:shadow-none hover:bg-orange-700"
+              style={{ borderColor: color }}
+            >
+              <p className={`${inter.className} pr-2 text-white`}>Learn More</p>
+              <LanguageIcon className="text-white" />
+            </div>
+          </div>
+        </a>
+
 
           </div>
         </div>
@@ -79,14 +84,20 @@ function Communities() {
             <p className="mb-3 font-normal text-gray-100 text-start ">
               Preparing a young kid to be competitive in the digital era involves fostering a blend of technical skills, soft skills, and a mindset geared towards continuous learning and adaptability.
             </p>
-            <a href="https://www.evangadi.com/" className="mt-auto">
-              <div className="flex border w-fit py-1 px-2 rounded-md"
-                style={{ borderColor: "#E84023" }}
-              >
-                <p className={`${inter.className} pr-2 text-white`}>learn more</p>
-                <LanguageIcon className="text-white"/>
-              </div>
-            </a>
+        <a href="https://www.evangadi.com/" target="_blank" rel="noopener noreferrer" className="mt-auto">
+          <div className="relative transition-all duration-200 ease-in-out transform hover:-translate-y-1">
+            <div
+              className="flex border w-fit py-1 px-2 rounded-sm bg-transparent border-2 shadow-[4px_4px_0px_#E84023] hover:shadow-none hover:bg-orange-700"
+              style={{ borderColor: color }}
+            >
+              <p className={`${inter.className} pr-2 text-white`}>Learn More</p>
+              <LanguageIcon className="text-white" />
+            </div>
+          </div>
+        </a>
+
+
+
 
           </div>
         </div>
