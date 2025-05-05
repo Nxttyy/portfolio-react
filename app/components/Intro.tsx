@@ -5,12 +5,12 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import PictureAsPdf from '@mui/icons-material/PictureAsPdf';
+//import PictureAsPdf from '@mui/icons-material/PictureAsPdf';
 import { useEffect, useState } from "react";
 // import bg from '../../public/bg-grad-cropped.png'
 
 
-const backgroundImage = `url("/bg-grad-cropped.png")`; 
+const backgroundImage = `url("/bg-grad-cropped.png")`;
 
 
 const micro_5 = Jersey_10({
@@ -31,7 +31,7 @@ function Intro() {
       .catch((err) => console.error("Error loading ASCII art:", err));
   }, []);
 
-  
+
 
 
   return (
@@ -53,53 +53,52 @@ function Intro() {
           </li>
           {/* linkdin */}
           <li className="relative group transition-transform duration-300 hover:scale-125">
-            <a href="https://www.linkedin.com/in/nathnael-yirga/"  target="_blank">
+            <a href="https://www.linkedin.com/in/nathnael-yirga/" target="_blank">
               <LinkedInIcon className="mx-5 fill-slate-400" />
               <span className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2 text-xs text-slate-100 bg-slate-800 p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  linkdin
-                </span>
+                linkdin
+              </span>
             </a>
-           
+
           </li>
           <li className="relative group transition-transform duration-300 hover:scale-125">
             <a href="https://www.telegram.me/Nxtiey/" target="_blank">
               <TelegramIcon className="mx-5 fill-slate-400" />
               <span className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2 text-xs text-slate-100 bg-slate-800 p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  telegram
-                </span>
-              </a>
+                telegram
+              </span>
+            </a>
           </li>
           <li className="relative group transition-transform duration-300 hover:scale-125">
             <a href="https://www.github.com/Nxttyy/" target="_blank">
-            <GitHubIcon className="mx-5 fill-slate-400" />
+              <GitHubIcon className="mx-5 fill-slate-400" />
               <span className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2 text-xs text-slate-100 bg-slate-800 p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    github
+                github
               </span>
             </a>
-           
+
           </li>
           <li className="relative group transition-transform duration-300 hover:scale-125">
             <a href="https://www.twitter.com/NathnaelYirga/" target="_blank">
-            <XIcon className="mx-5 fill-slate-400" />
+              <XIcon className="mx-5 fill-slate-400" />
               <span className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2 text-xs text-slate-100 bg-slate-800 p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 twitter
               </span>
             </a>
           </li>
           {/* CV button */}
-          <li className="relative group transition-transform duration-300 hover:scale-125">
+          {/*<li className="relative group transition-transform duration-300 hover:scale-125">
             <a href="/cv.pdf" target="_blank" download>
               <PictureAsPdf className="mx-5 fill-slate-400" />
-              {/* Popup description */}
               <span className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2 text-xs text-slate-100 bg-slate-800 p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 CV
               </span>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
-     
+
 
       <div className="w-[400px] h-[400px] flex justify-center items-center overflow-hidden  rounded-lg m-5">
         <pre
