@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Terminal/ASCII-inspired portfolio design system */
+
+@layer base {
+  :root {
+    /* Cream/Paper background for that document feel */
+    --background: 40 20% 97%;
+    --foreground: 0 0% 10%;
+
+    /* Card with strong borders */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Dark primary for terminal feel */
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Subtle secondary */
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
+
+    /* Muted for less important text */
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent with slight blue tint for links */
+    --accent: 210 100% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Strong borders for card effect */
+    --border: 0 0% 10%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 10%;
+
+    /* Sharp corners for terminal feel */
+    --radius: 0.125rem;
+  }
+
+  .dark {
+    /* Dark terminal background */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    /* Card with strong borders */
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Light primary for dark mode */
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 10%;
+
+    /* Subtle secondary */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted for less important text */
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    /* Accent with slight blue tint for links */
+    --accent: 210 100% 60%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Strong borders for dark mode */
+    --border: 0 0% 95%;
+    --input: 0 0% 80%;
+    --ring: 0 0% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono;
+  }
+
+  /* ASCII-style card borders */
+  .terminal-card {
+    @apply border-2 border-border bg-card p-6 shadow-[4px_4px_0px_0px_hsl(var(--border))];
+  }
+
+  .dark .terminal-card {
+    @apply shadow-[4px_4px_0px_0px_hsl(var(--border))];
+  }
+
+
+
+  /* Link styling */
+  .terminal-link {
+    @apply text-accent underline hover:text-primary transition-colors;
+  }
+
+  /* Section headings */
+  .section-heading {
+    @apply text-sm uppercase tracking-wider font-semibold mb-4 text-muted-foreground;
+  }
+}
