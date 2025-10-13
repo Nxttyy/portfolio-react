@@ -71,7 +71,7 @@ const Header = () => {
 
         {/* Right: ASCII Art Image Placeholder */}
         <div className="flex items-center justify-center rounded-full">
-          <img src="/me.png" alt="Me" className="rounded-full " />
+          <img src="/me.webp" alt="Me" className="rounded-full " />
         </div>
       </div>
     </header>

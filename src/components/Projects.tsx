@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Campus Sync",
       description:
         "Full-stack React–Django application serving as a fair, student-focused marketplace for sharing and valuing campus events and information.",
-      thumbnail: "/gradient-1.png",
+      thumbnail: "/gradient-1.webp",
       githubUrl: "https://github.com/GDSC-Hackaton",
       liveUrl: "https://natty.pythonanywhere.com/",
     },
@@ -22,14 +22,14 @@ const Projects = () => {
       title: "Libgen Book Downloader",
       description:
         "Python-based CLI tool for searching and downloading books from Library Genesis, featuring flexible query options and customizable download paths.",
-      thumbnail: "/gradient-2.png",
+      thumbnail: "/gradient-2.webp",
       githubUrl: "https://github.com/Nxttyy/libgen-api-cli",
     },
     {
       title: "Anon Chat-App",
       description:
         "Flask and Socket.IO–powered web app enabling real-time anonymous chat rooms with a lightweight and minimalist design.",
-      thumbnail: "/gradient-3.png",
+      thumbnail: "/gradient-3.webp",
       githubUrl: "https://github.com/Nxttyy/Chat-App",
       liveUrl: "https://project-gamma.com",
     },
@@ -37,7 +37,7 @@ const Projects = () => {
       title: "English - Amharic Dictionary",
       description:
         "Flask-based web app providing fast English-to-Amharic word translations through a simple, user-friendly interface.",
-      thumbnail: "/gradient-4.png",
+      thumbnail: "/gradient-4.webp",
       githubUrl: "https://github.com/Nxttyy/AmharicDictionary",
       liveUrl: "https://project-gamma.com",
     },
