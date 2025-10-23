@@ -31,7 +31,7 @@ const Projects = () => {
         "Flask and Socket.IO–powered web app enabling real-time anonymous chat rooms with a lightweight and minimalist design.",
       thumbnail: "/gradient-3.webp",
       githubUrl: "https://github.com/Nxttyy/Chat-App",
-      liveUrl: "https://project-gamma.com",
+      liveUrl: "https://chat.nathnaelyirga.dev",
     },
     {
       title: "English - Amharic Dictionary",
@@ -39,7 +39,7 @@ const Projects = () => {
         "Flask-based web app providing fast English-to-Amharic word translations through a simple, user-friendly interface.",
       thumbnail: "/gradient-4.webp",
       githubUrl: "https://github.com/Nxttyy/AmharicDictionary",
-      liveUrl: "https://project-gamma.com",
+      liveUrl: "https://en-amh.nathnaelyirga.dev",
     },
   ];
 
