@@ -31,7 +31,7 @@ const Projects = () => {
         "Flask and Socket.IO–powered web app enabling real-time anonymous chat rooms with a lightweight and minimalist design.",
       thumbnail: "/gradient-3.webp",
       githubUrl: "https://github.com/Nxttyy/Chat-App",
-      liveUrl: "https://chat.nathnaelyirga.dev",
+      liveUrl: "https://chat.nty.et",
     },
     {
       title: "English - Amharic Dictionary",
@@ -39,7 +39,7 @@ const Projects = () => {
         "Flask-based web app providing fast English-to-Amharic word translations through a simple, user-friendly interface.",
       thumbnail: "/gradient-4.webp",
       githubUrl: "https://github.com/Nxttyy/AmharicDictionary",
-      liveUrl: "https://en-amh.nathnaelyirga.dev",
+      liveUrl: "https://en-amh.nty.et",
     },
   ];
 
@@ -48,24 +48,28 @@ const Projects = () => {
       <h2 className="section-heading">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="terminal-card">
+          <div key={index} className="terminal-card group flex flex-col">
             {project.thumbnail && (
-              <div className="mb-4 border border-border aspect-video bg-muted flex items-center justify-center">
-                <span className="text-xs text-muted-foreground">
-                  <img src={project.thumbnail} alt="thumbnail" />
-                </span>
+              <div className="mb-4 border-[3px] border-border aspect-video overflow-hidden bg-muted">
+                <img
+                  src={project.thumbnail}
+                  alt={`${project.title} thumbnail`}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
             )}
-            <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-            <p className="text-sm text-muted-foreground mb-4">
+            <h3 className="text-lg font-bold mb-2">{project.title}</h3>
+            <p className="text-sm text-muted-foreground mb-4 flex-grow">
               {project.description}
             </p>
-            <div className="flex gap-4 text-sm">
+            <div className="flex gap-4 text-sm font-semibold">
               <a
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="terminal-link flex items-center gap-1"
+                className="terminal-link flex items-center gap-1 hover:-translate-y-0.5 transition-transform"
               >
                 <Github className="w-4 h-4" />
                 <span>Code</span>
@@ -75,7 +79,7 @@ const Projects = () => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="terminal-link flex items-center gap-1"
+                  className="terminal-link flex items-center gap-1 hover:-translate-y-0.5 transition-transform"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Live</span>

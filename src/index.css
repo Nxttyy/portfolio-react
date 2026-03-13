@@ -31,8 +31,8 @@
     --muted: 0 0% 92%;
     --muted-foreground: 0 0% 40%;
 
-    /* Accent with slight blue tint for links */
-    --accent: 210 100% 40%;
+    /* Red-danger accent (#b2414f) for micro-interactions */
+    --accent: 353 46% 48%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -71,8 +71,8 @@
     --muted: 0 0% 18%;
     --muted-foreground: 0 0% 60%;
 
-    /* Accent with slight blue tint for links */
-    --accent: 210 100% 60%;
+    /* Red-danger accent for dark mode */
+    --accent: 353 55% 58%;
     --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;

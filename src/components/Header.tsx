@@ -39,7 +39,7 @@ const Header = () => {
         <div className="space-y-6">
           <div>
             <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
-              Natty
+              Natty Y.
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6">
               Backend Heavy Fullstack Developer
@@ -71,7 +71,7 @@ const Header = () => {
 
         {/* Right: ASCII Art Image Placeholder */}
         <div className="flex items-center justify-center rounded-full">
-          <img src="/me.webp" alt="Me" className="rounded-full " />
+          <img src="/me.webp" alt="Me" className="rounded-full" />
         </div>
       </div>
     </header>
