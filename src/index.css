@@ -115,3 +115,139 @@
     @apply text-sm uppercase tracking-wider font-semibold mb-4 text-muted-foreground;
   }
 }
+
+@layer components {
+  /* Generative mesh-gradient art — replaces static project thumbnails.
+     Each card gets its own bold 4-colour palette over a deep base; two
+     counter-drifting blob layers create slow organic motion, and a print
+     grain overlay ties it to the paper/terminal aesthetic. */
+  .project-graphic {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    /* default palette (overridden per card below) */
+    --c1: 280 82% 62%;
+    --c2: 200 88% 58%;
+    --c3: 330 82% 62%;
+    --c4: 42 92% 60%;
+    --base: 240 32% 11%;
+    background-color: hsl(var(--base));
+  }
+
+  .project-graphic::before,
+  .project-graphic::after {
+    content: "";
+    position: absolute;
+    inset: -35%;
+    will-change: transform;
+  }
+
+  /* primary mesh — four colour wells anchored to the corners */
+  .project-graphic::before {
+    background:
+      radial-gradient(42% 46% at 22% 26%, hsl(var(--c1) / 0.95), transparent 62%),
+      radial-gradient(44% 48% at 80% 28%, hsl(var(--c2) / 0.9), transparent 64%),
+      radial-gradient(46% 50% at 28% 80%, hsl(var(--c3) / 0.9), transparent 62%),
+      radial-gradient(44% 48% at 82% 82%, hsl(var(--c4) / 0.85), transparent 64%);
+    filter: blur(16px) saturate(1.02);
+    animation: graphic-drift-a 21s ease-in-out infinite alternate;
+  }
+
+  /* secondary mesh — counter-moving, screened for luminous flow + depth */
+  .project-graphic::after {
+    background:
+      radial-gradient(38% 42% at 64% 18%, hsl(var(--c4) / 0.7), transparent 60%),
+      radial-gradient(40% 44% at 16% 58%, hsl(var(--c2) / 0.6), transparent 62%),
+      radial-gradient(42% 46% at 70% 70%, hsl(var(--c1) / 0.6), transparent 60%);
+    mix-blend-mode: screen;
+    filter: blur(26px);
+    animation: graphic-drift-b 27s ease-in-out infinite alternate;
+  }
+
+  /* Fine grain overlay for the textured, printed feel */
+  .project-graphic .grain {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.16;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    background-size: 160px 160px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  @keyframes graphic-drift-a {
+    0% {
+      transform: translate3d(-4%, -3%, 0) rotate(0deg) scale(1.05);
+    }
+    50% {
+      transform: translate3d(3%, 2%, 0) rotate(7deg) scale(1.14);
+    }
+    100% {
+      transform: translate3d(-2%, 4%, 0) rotate(-5deg) scale(1.08);
+    }
+  }
+
+  @keyframes graphic-drift-b {
+    0% {
+      transform: translate3d(3%, 2%, 0) rotate(0deg) scale(1.1);
+    }
+    50% {
+      transform: translate3d(-4%, -2%, 0) rotate(-9deg) scale(1);
+    }
+    100% {
+      transform: translate3d(2%, -3%, 0) rotate(6deg) scale(1.12);
+    }
+  }
+
+  /* Per-card palettes — five distinct, saturated artworks. */
+
+  /* Campus Sync — fresh teal / green / sky community vibe */
+  .graphic-1 {
+    --c1: 168 50% 50%;
+    --c2: 200 58% 58%;
+    --c3: 150 46% 50%;
+    --c4: 95 44% 56%;
+    --base: 198 36% 9%;
+  }
+  /* Libgen CLI — violet / magenta / indigo techy glow */
+  .graphic-2 {
+    --c1: 270 52% 64%;
+    --c2: 320 52% 62%;
+    --c3: 230 54% 64%;
+    --c4: 290 48% 60%;
+    --base: 262 36% 10%;
+  }
+  /* Anon Chat — electric cyan / blue / violet */
+  .graphic-3 {
+    --c1: 190 60% 58%;
+    --c2: 220 56% 62%;
+    --c3: 265 52% 66%;
+    --c4: 175 52% 52%;
+    --base: 220 40% 9%;
+  }
+  /* Amharic Dictionary — warm sunset orange / red / gold */
+  .graphic-4 {
+    --c1: 25 64% 58%;
+    --c2: 8 56% 58%;
+    --c3: 45 66% 60%;
+    --c4: 340 52% 62%;
+    --base: 15 40% 10%;
+  }
+
+  /* Featured (Morus) — literary amber / burgundy / coral, echoing the accent */
+  .graphic-feature {
+    --c1: 38 66% 60%;
+    --c2: 353 48% 56%;
+    --c3: 18 58% 62%;
+    --c4: 45 64% 68%;
+    --base: 350 32% 11%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project-graphic::before,
+    .project-graphic::after {
+      animation: none;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 interface Project {
   title: string;
   description: string;
-  thumbnail?: string;
+  graphic: string;
   githubUrl: string;
   liveUrl?: string;
   featured?: boolean;
@@ -16,7 +16,7 @@ const Projects = () => {
       title: "Morus",
       description:
         "A personal library and reading catalogue powered by the Open Library API. Search, organize, and share your bookshelf through a clean, minimal interface.",
-      thumbnail: "/gradient-1.webp",
+      graphic: "graphic-feature",
       githubUrl: "https://github.com/Nxttyy/myshelf-openlib-catalogue",
       liveUrl: "https://morus.nty.et",
       featured: true,
@@ -37,14 +37,14 @@ const Projects = () => {
       title: "Libgen Book Downloader",
       description:
         "Python-based CLI tool for searching and downloading books from Library Genesis, featuring flexible query options and customizable download paths.",
-      thumbnail: "/gradient-2.webp",
+      graphic: "graphic-2",
       githubUrl: "https://github.com/Nxttyy/libgen-api-cli",
     },
     {
       title: "Anon Chat-App",
       description:
         "Flask and Socket.IO–powered web app enabling real-time anonymous chat rooms with a lightweight and minimalist design.",
-      thumbnail: "/gradient-3.webp",
+      graphic: "graphic-3",
       githubUrl: "https://github.com/Nxttyy/Chat-App",
       liveUrl: "https://chat.nty.et",
     },
@@ -52,7 +52,7 @@ const Projects = () => {
       title: "English - Amharic Dictionary",
       description:
         "Flask-based web app providing fast English-to-Amharic word translations through a simple, user-friendly interface.",
-      thumbnail: "/gradient-4.webp",
+      graphic: "graphic-4",
       githubUrl: "https://github.com/Nxttyy/AmharicDictionary",
       liveUrl: "https://en-amh.nty.et",
     },
@@ -60,7 +60,7 @@ const Projects = () => {
       title: "Campus Sync",
       description:
         "Full-stack React–Django application serving as a fair, student-focused marketplace for sharing and valuing campus events and information.",
-      thumbnail: "/gradient-1.webp",
+      graphic: "graphic-1",
       githubUrl: "https://github.com/GDSC-Hackaton",
     },
   ];
@@ -68,7 +68,7 @@ const Projects = () => {
   return (
     <section className="mb-12">
       <h2 className="section-heading">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -78,21 +78,19 @@ const Projects = () => {
                 : "flex-col"
             }`}
           >
-            {project.thumbnail && (
+            <div
+              className={`border-[3px] border-border aspect-video overflow-hidden ${
+                project.featured ? "mb-4 md:mb-0 md:w-2/5 md:shrink-0" : "mb-4"
+              }`}
+            >
               <div
-                className={`border-[3px] border-border aspect-video overflow-hidden bg-muted ${
-                  project.featured ? "mb-4 md:mb-0 md:w-2/5 md:shrink-0" : "mb-4"
-                }`}
+                className={`project-graphic ${project.graphic} w-full h-full transition-transform duration-700 ease-out group-hover:scale-110`}
+                role="img"
+                aria-label={`${project.title} graphic`}
               >
-                <img
-                  src={project.thumbnail}
-                  alt={`${project.title} thumbnail`}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                <span className="grain" />
               </div>
-            )}
+            </div>
             <div className="flex flex-col flex-grow">
               <div className="flex items-center gap-3 mb-2">
                 <h3
