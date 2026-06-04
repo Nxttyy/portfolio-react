@@ -5,6 +5,7 @@ import {
   Send,
   MessageCircle,
   Bird,
+  Grape,
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
@@ -24,6 +25,12 @@ const Header = () => {
       href: "https://discord.com/users/Natty777x",
     },
     { name: "X", icon: Bird, href: "https://x.com/NathnaelYirga" },
+    {
+      name: "Morus",
+      icon: Grape,
+      href: "https://morus.nty.et/u/natty",
+      highlight: true,
+    },
   ];
 
   return (
@@ -53,14 +60,18 @@ const Header = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-border px-4 py-2 hover:bg-secondary transition-colors flex items-center gap-2"
+                className={`border-2 px-3 py-2 transition-colors flex items-center gap-2 ${
+                  link.highlight
+                    ? "border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                    : "border-border hover:bg-secondary"
+                }`}
               >
                 <link.icon className="w-4 h-4" />
                 <span className="text-sm">{link.name}</span>
