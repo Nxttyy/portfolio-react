@@ -5,9 +5,28 @@ import {
   Send,
   MessageCircle,
   Bird,
-  Grape,
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+
+const DoraIcon = ({ className }: { className?: string }) => (
+  <svg
+    className={className}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M8 5.4v13.2" />
+    <path d="M16 5.4v13.2" />
+    <ellipse cx="12" cy="5.4" rx="4" ry="2" />
+    <path d="M10.6 5.6a1.4 0.8 0 0 1 2.8 0" />
+    <path d="M8 18.6a4 2 0 0 0 8 0" />
+    <path d="M7.1 11.8h9.8" />
+    <path d="M9.7 11.8c-.5 1-.3 2.2.2 3.2" />
+  </svg>
+);
 
 const Header = () => {
   const socialLinks = [
@@ -26,9 +45,9 @@ const Header = () => {
     },
     { name: "X", icon: Bird, href: "https://x.com/NathnaelYirga" },
     {
-      name: "Morus",
-      icon: Grape,
-      href: "https://morus.nty.et/u/natty",
+      name: "Dora",
+      icon: DoraIcon,
+      href: "https://dora.nty.et/u/natty",
       highlight: true,
     },
   ];

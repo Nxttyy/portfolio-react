@@ -7,18 +7,19 @@ interface Project {
   githubUrl: string;
   liveUrl?: string;
   featured?: boolean;
+  noAccent?: boolean;
   tech?: string[];
 }
 
 const Projects = () => {
   const projects: Project[] = [
     {
-      title: "Morus",
+      title: "Dora",
       description:
         "A personal library and reading catalogue powered by the Open Library API. Search, organize, and share your bookshelf through a clean, minimal interface.",
       graphic: "graphic-feature",
       githubUrl: "https://github.com/Nxttyy/myshelf-openlib-catalogue",
-      liveUrl: "https://morus.nty.et",
+      liveUrl: "https://dora.nty.et",
       featured: true,
       tech: [
         "Python",
@@ -30,6 +31,28 @@ const Projects = () => {
         "JWT/OAuth2",
         "Jinja2",
         "Vanilla JS",
+        "httpx",
+      ],
+    },
+    {
+      title: "Kalendae",
+      description:
+        "A Telegram bot that turns forwarded messages into Google Calendar events. Forward it anything mentioning an event and it extracts the title, date, time, and location, then adds it to your calendar — with support for multiple connected Google accounts.",
+      graphic: "graphic-feature-2",
+      githubUrl: "https://github.com/Nxttyy/snooze",
+      liveUrl: "https://t.me/parsenremind_bot",
+      featured: true,
+      noAccent: true,
+      tech: [
+        "Python",
+        "FastAPI",
+        "python-telegram-bot",
+        "SQLModel",
+        "PostgreSQL",
+        "Alembic",
+        "Google Calendar API",
+        "OAuth2",
+        "Cryptography",
         "httpx",
       ],
     },
@@ -74,7 +97,9 @@ const Projects = () => {
             key={index}
             className={`terminal-card group flex ${
               project.featured
-                ? "md:col-span-2 flex-col md:flex-row gap-6 border-accent"
+                ? `md:col-span-2 flex-col md:flex-row gap-6 ${
+                    project.noAccent ? "" : "border-accent"
+                  }`
                 : "flex-col"
             }`}
           >
