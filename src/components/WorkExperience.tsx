@@ -14,8 +14,9 @@ const WorkExperience = () => {
       role: "Senior Full-Stack Engineer",
       period: "2024 - Present",
       responsibilities: [
-        "Architected and deployed CI/CD pipelines automating GitHub-to-AWS deployments",
+        "Architected and deployed CI/CD pipelines automating GitHub-to-AWS deployments, with structured logging and rotation for production observability",
         "Built secure, multi-tenant backend APIs and UI with role-based Power BI embedding",
+        "Designed and shipped an AI chatbot microservice with LLM-driven natural-language-to-SQL, sandboxed by a custom per-tenant query security layer",
         "Optimized embedded analytics to cut costs and improve performance",
       ],
     },
@@ -26,7 +27,8 @@ const WorkExperience = () => {
       period: "2025 - Present",
       responsibilities: [
         "Designed multi-level architecture integrating major cloud providers for automated billing insights",
-        "Engineered efficient pipelines for data aggregation and analysis",
+        "Built a retrieval-augmented AI chatbot letting customers query their cloud billing data in natural language, backed by a pgvector RAG pipeline",
+        "Shipped statistical anomaly detection surfacing cloud and AI-provider cost spikes, extending billing coverage to OpenAI and Anthropic spend",
         "Implemented advanced auth flows including SSO and passwordless login",
       ],
     },
